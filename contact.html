@@ -9,8 +9,15 @@
 		<link rel="stylesheet" href="css/ie7.css" type="text/css">
 	<![endif]-->
 	<link rel="icon" href="images/logo.png" title="ChessClub">
+	<script src="Scripts/jquery-3.5.1.js"></script>
+	<script src="Scripts/customScript.js"></script>
 </head>
 <body>
+<script>
+$( document ).ready(function() {
+	$('#copyright').html(setCopyRight($('#copyright').html));
+});
+</script>
 	<div class="page">
 		<div class="background">
 			<div class="sidebar">
@@ -20,19 +27,13 @@
 						<a href="index.html">Home</a>
 					</li>
 					<li>
+						<a href="blog.html">Blog News</a>
+					</li>
+					<li>
 						<a href="about.html">About Us</a>
-					</li>
-					<li>
-						<a href="classes.html">Classes</a>
-					</li>
-					<li>
-						<a href="tournaments.html">Tournaments</a>
 					</li>
 					<li class="selected">
 						<a href="contact.html">Contact Us</a>
-					</li>
-					<li>
-						<a href="blog.html">Blog News</a>
 					</li>
 				</ul>
 			</div>
@@ -105,7 +106,7 @@
 							<input type="submit" value="">
 						</form>
 					</div>
-					<div class="connect">
+					<div class="connect" style="display:none">
 						<div id="facebook">
 							<a href="http://freewebsitetemplates.com/go/facebook/">facebook</a>
 						</div>
@@ -122,24 +123,17 @@
 						<a href="index.html">Home</a>
 					</li>
 					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
 						<a href="about.html">About Us</a>
-					</li>
-					<li>
-						<a href="classes.html">Classes</a>
-					</li>
-					<li>
-						<a href="tournaments.html">Tournaments</a>
 					</li>
 					<li>
 						<a href="contact.html">Contact Us</a>
 					</li>
-					<li>
-						<a href="blog.html">Blog</a>
-					</li>
+					
 				</ul>
-				<p>
-					&#169; 2023 Family Chess Club. All Rights Reserved
-				</p>
+				<p id="copyright">&copy; Family Chess Club. All Rights Reserved</p>
 			</div>
 		</div>
 	</div>
