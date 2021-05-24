@@ -633,7 +633,7 @@ p a:hover {
 	width:auto;
 	margin:0 auto;
 	background:url(../images/bg-footer.jpg)!important;
-	min-height: 252px;
+	min-height: 150px;
 }
 .footer > div {
 	width:770px;
@@ -647,8 +647,7 @@ p a:hover {
 	border-color:#e3b06f;
 	border-style:none solid none none;
 	border-width:1px;
-	height:217px;
-	width:241px;
+	height:115px;
 	padding: 20px 0;
 }
 .footer div div div:first-child h3 {
@@ -664,12 +663,12 @@ p a:hover {
 .footer div div div:first-child ul {
 	margin:0;
 	padding:0;
+	list-style-type: disclosure-closed;
 }
-.footer div div div:first-child ul li:first-child {
-	margin:0;
-}
+
 .footer div div div:first-child ul li {
 	margin:25px 0 0;
+	float: left;
 }
 .footer div div div:first-child ul li h4 {
 	margin:0;
@@ -718,9 +717,8 @@ p a:hover {
 	border-style:none solid;
 	border-width:1px;
 	float:left;
-	height:217px;
+	height:115px;
 	padding:20px;
-	width:215px;
 }
 .footer div div div h3 {
 	color:#FFF;
